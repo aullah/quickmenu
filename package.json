@@ -1,0 +1,37 @@
+{
+  "name": "quickmenu",
+  "version": "0.2.0",
+  "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
+  "main": "dist/js/quickmenu.min.js",
+  "scripts": {
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aullah/quickmenu.git"
+  },
+  "keywords": [
+    "responsive",
+    "menu",
+    "navigation",
+    "css",
+    "sass",
+    "web",
+    "quick",
+    "floating"
+  ],
+  "author": "Arif Ullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aullah/quickmenu/issues"
+  },
+  "homepage": "https://github.com/aullah/quickmenu#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "jquery": "^3.5.1",
+  },
+  "peerDependencies": {
+    "jquery": "1.9.1 - 3"
+  }
+}
