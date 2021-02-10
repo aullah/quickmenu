@@ -1,10 +1,11 @@
 {
   "name": "quickmenu",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
   "scripts": {
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
+    "js-compile": "uglifyjs js/quickmenu.js -o dist/js/quickmenu.min.js -c -m"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "node-sass": "^5.0.0",
     "jquery": "^3.5.1",
+    "uglify-js": "^3.12.7"
   },
   "peerDependencies": {
     "jquery": "1.9.1 - 3"
