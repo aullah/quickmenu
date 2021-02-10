@@ -1,10 +1,11 @@
 {
   "name": "quickmenu",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
   "scripts": {
-    "css-compile": "node-sass --output-style compressed --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
+    "css-compile-minify": "node-sass --output-style compressed --source-map true --source-map-contents true scss/quickmenu.scss dist/css/quickmenu.min.css",
     "js-compile": "uglifyjs js/quickmenu.js -o dist/js/quickmenu.min.js -c -m"
   },
   "repository": {
@@ -19,7 +20,8 @@
     "sass",
     "web",
     "quick",
-    "floating"
+    "html",
+    "javascript"
   ],
   "author": "Arif Ullah",
   "license": "MIT",
