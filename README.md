@@ -46,6 +46,47 @@ Then for complete customisation, import Quick Menu's pre-compiled Sass into your
 @import "node_modules/quickmenu/src/scss/quickmenu";
 ```
 
+## Usage
+When in responsive mode for mobiles and tablets, the menu is fixed at the bottom of the screen within thumb reach. For desktops a regular inline menu is displayed, therefore you should place the HTML code where you want the navigation to be positioned for desktop visitors.
+
+### Utmost Minimal
+```html
+<!-- Utmost Minimal -->
+<nav class="quick-menu navigation">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+```
+
+### Full Fledged
+Including FontAwesome icons, menu heading content, customised wording on open and close buttons.
+```html
+<div class="quick-menu navigation">
+    <div class="button"><i class="fas fa-bars"></i> My Menu</div>
+    <div class="menu">
+        <div class="menu-heading">
+            <i class="far fa-compass"></i>
+            <span>My Menu</span>
+            <p>Explore the contents of this site by jumping around using the following handy menu.</p>
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/about"><i class="far fa-user-circle"></i>About</a></li>
+                <li><a href="/work"><i class="fas fa-briefcase"></i>Work</a></li>
+                <li><a href="/contact"><i class="far fa-paper-plane"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-close">Dismiss</div>
+    </div>
+</div>
+```
+
 ## To-Do / Future Plans
 * Remove dependency from jQuery. (Currently in progress.)
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
