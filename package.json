@@ -4,9 +4,9 @@
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
   "scripts": {
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
-    "css-compile-minify": "node-sass --output-style compressed --source-map true --source-map-contents true scss/quickmenu.scss dist/css/quickmenu.min.css",
-    "js-compile": "uglifyjs js/quickmenu.js -o dist/js/quickmenu.min.js -c -m"
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/ -o dist/css/",
+    "css-compile-minify": "node-sass --output-style compressed --source-map true --source-map-contents true src/scss/quickmenu.scss dist/css/quickmenu.min.css",
+    "js-compile": "uglifyjs src/js/quickmenu.js -o dist/js/quickmenu.min.js -c -m"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,10 @@
     "url": "https://github.com/aullah/quickmenu/issues"
   },
   "homepage": "https://github.com/aullah/quickmenu#readme",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^5.0.0",
