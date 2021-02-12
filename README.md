@@ -46,12 +46,6 @@ Then for complete customisation, import Quick Menu's pre-compiled Sass into your
 @import "node_modules/quickmenu/src/scss/quickmenu";
 ```
 
-Or alternatively you may import the ready-to-use compiled css:
-
-```scss
-@import "node_modules/quickmenu/dist/css/quickmenu.min";
-```
-
 ## To-Do / Future Plans
 * Remove dependency from jQuery. (Currently in progress.)
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
