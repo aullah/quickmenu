@@ -28,3 +28,7 @@ The customisation capabilities are reduced by using a CDN, however you should st
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. In a similar order, it's recommended to place the script before any of your own custom scripts too.
+
+## Credits / References
+* Inspired by "iPhone X Web Navigation Concept" by [Daniel Korpai via Medium](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50) and [Dribble](https://dribbble.com/shots/3851367-iPhone-X-Web-Navigation-Idea).
+* Research on "The Thumb Zone: Designing For Mobile Users" by [Samantha Ingram via Smashing Magazine](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/).
