@@ -63,8 +63,8 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 ```
 
 ### Full Fledged
-Including FontAwesome icons, menu heading content, customised wording on open and close buttons.
 ```html
+<!-- Full Fledged: including FontAwesome icons, menu heading content, customised wording on open and close buttons. -->
 <div class="quick-menu navigation">
     <div class="button"><i class="fas fa-bars"></i> My Menu</div>
     <div class="menu">
