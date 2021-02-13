@@ -46,6 +46,12 @@ Then for complete customisation, import Quick Menu's pre-compiled Sass into your
 @import "node_modules/quickmenu/src/scss/quickmenu";
 ```
 
+Or alternatively you may import the ready-to-use compiled css (via a bundler, e.g. Webpack):
+
+```javascript
+import "quickmenu/dist/css/quickmenu.min.css";
+```
+
 ## Usage
 When in responsive mode for mobiles and tablets, the menu is fixed at the bottom of the screen within thumb reach. For desktops a regular inline menu is displayed, therefore you should place the HTML code where you want the navigation to be positioned for desktop visitors.
 
