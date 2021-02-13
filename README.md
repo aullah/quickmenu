@@ -126,7 +126,7 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 * Remove dependency from jQuery. (Currently in progress.)
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
 * Provide the ability to toggle themes manually.
-* Advance the desktop menu further with additional optionally applicable features.
+* Implement the ability to have sub-menus for both desktop and mobile devices.
 
 ## Credits / References
 * Inspired by "iPhone X Web Navigation Concept" by [Daniel Korpai via Medium](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50) and [Dribble](https://dribbble.com/shots/3851367-iPhone-X-Web-Navigation-Idea).
