@@ -49,7 +49,8 @@ Then for complete customisation, import Quick Menu's pre-compiled Sass into your
 ## Usage
 When in responsive mode for mobiles and tablets, the menu is fixed at the bottom of the screen within thumb reach. For desktops a regular inline menu is displayed, therefore you should place the HTML code where you want the navigation to be positioned for desktop visitors.
 
-### Utmost Minimal
+### Examples
+#### Utmost Minimal
 ```html
 <!-- Utmost Minimal -->
 <nav class="quick-menu navigation">
@@ -62,7 +63,41 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 </nav>
 ```
 
-### Full Fledged
+#### Minimal: Renaming Quick Menu Button
+```html
+<!-- Minimal: Renaming Quick Menu Button -->
+<div class="quick-menu navigation">
+    <div class="button">My Menu</div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+```
+
+#### Minimal: Renaming Close Button
+```html
+<!-- Minimal: Renaming Close Button -->
+<div class="quick-menu navigation">
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-close">Dismiss</div>
+    </div>
+</div>
+```
+
+#### Full Fledged
 ```html
 <!-- Full Fledged: including FontAwesome icons, menu heading content, customised wording on open and close buttons. -->
 <div class="quick-menu navigation">
