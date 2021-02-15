@@ -12,6 +12,7 @@ The new forward-thinking standard of mobile navigation for the web, providing an
 * Menu wording and content all customisable in HTML.
 * Responsive for mobile, tablet and desktop. Desktop will render a basic inline navigation.
 * SEO friendly. No need to duplicate navigation items for each device type and content display controlled purely via CSS.
+* No development dependencies, libraries or prerequisites required.
 
 ## Installation
 ### Quick Start via CDN
@@ -129,7 +130,6 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 ```
 
 ## To-Do / Future Plans
-* Remove dependency from jQuery. (Currently in progress.)
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
 * Provide the ability to toggle themes manually.
 * Implement the ability to have sub-menus for both desktop and mobile devices.
