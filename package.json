@@ -1,11 +1,12 @@
 {
   "name": "quickmenu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
+  "module": "dist/js/quickmenu.min.js",
   "scripts": {
-    "watch": "concurrently \"./node_modules/.bin/babel src -d dist --watch --source-maps --out-file-extension .min.js\" \"node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/ -wo dist/css/\" ",
-    "build": "(babel src -d dist --source-maps --out-file-extension .min.js) && (node-sass --output-style compressed --source-map true --source-map-contents true src/scss/quickmenu.scss dist/css/quickmenu.min.css)"
+    "watch": "concurrently \"babel src -d dist --watch --source-maps --out-file-extension .min.js\" \"rollup -c -w\" \"node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/ -wo dist/css/\" ",
+    "build": "(babel src -d dist --source-maps --out-file-extension .min.js) && (rollup -c) && (node-sass --output-style compressed --source-map true --source-map-contents true src/scss/quickmenu.scss dist/css/quickmenu.min.css)"
   },
   "repository": {
     "type": "git",
@@ -38,9 +39,12 @@
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "babel-minify": "^0.5.1",
+    "@rollup/plugin-babel": "^5.3.0",
     "concurrently": "^5.3.0",
     "core-js": "^3.8.3",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "peerDependencies": {}
 }
