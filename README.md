@@ -28,14 +28,14 @@ The customisation capabilities are reduced by using a CDN, however you should st
 <script src="https://cdn.jsdelivr.net/npm/quickmenu@1.1.0/dist/js/quickmenu.bundle.min.js" integrity="sha384-7BJ+VsWSKOvU637CO9MyYQ7FeuMMDPyXcUM17e3VZKbLWyhRXYBCqFIHkJYB8Tjw" crossorigin="anonymous"></script>
 ```
 
-We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. In a similar order, it's recommended to place the script before any of your own custom scripts too.
+We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.
 
 ### NPM
 The Quick Menu can be installed as a Node.js module into your project using NPM with the following command:
 
     npm install quickmenu
 
-Using a module bundler such as Webpack, import Quick Menu's JavaScript into your JS file (e.g. `app.js`):
+Using a module bundler such as Webpack, import Quick Menu's JavaScript into your JS file (e.g. usually `main.js` or `app.js`):
 
 ```javascript
 import QuickMenu from "quickmenu";
