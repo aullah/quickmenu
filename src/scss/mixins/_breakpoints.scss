@@ -1,0 +1,15 @@
+@mixin breakpoint-quickmenu($point)
+{
+    @if $point == large {
+        @media (min-width: 1270px) { @content; }
+    }
+    @else if $point == medium {
+        @media (min-width: 1024px) { @content; }
+    }
+    @else if $point == small {
+        @media (min-width: 768px) { @content; }
+    }
+    @else if $point == mobile-landscape { // Quick Menu support for mobile devices in landscape. Includes all iPhones (tested upto iPhone 12 PRO Max) and all Androids (tested upto Galaxy S20 Ultra).
+        @media (max-height: 428px) and (orientation: landscape) { @content; }
+    }
+}
