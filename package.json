@@ -5,8 +5,8 @@
   "main": "dist/js/quickmenu.min.js",
   "module": "dist/js/quickmenu.min.js",
   "scripts": {
-    "watch": "concurrently \"babel src -d dist --watch --source-maps --out-file-extension .min.js\" \"rollup -c -w\" \"node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/ -wo dist/css/\" ",
-    "build": "(babel src -d dist --source-maps --out-file-extension .min.js) && (rollup -c) && (node-sass --output-style compressed --source-map true --source-map-contents true src/scss/quickmenu.scss dist/css/quickmenu.min.css)"
+    "watch": "concurrently \"babel src -d dist --watch --source-maps --out-file-extension .min.js\" \"rollup -c -w\" \"sass --style=expanded --source-map --embed-sources --watch src/scss:dist/css/\" ",
+    "build": "(babel src -d dist --source-maps --out-file-extension .min.js) && (rollup -c) && (sass --style=compressed --source-map --embed-sources src/scss/quickmenu.scss:dist/css/quickmenu.min.css) && (sass --style=expanded --source-map --embed-sources src/scss:dist/css/)"
   },
   "repository": {
     "type": "git",
@@ -38,13 +38,13 @@
     "@babel/cli": "^7.12.16",
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
-    "babel-minify": "^0.5.1",
     "@rollup/plugin-babel": "^5.3.0",
+    "babel-minify": "^0.5.1",
     "concurrently": "^5.3.0",
     "core-js": "^3.8.3",
-    "node-sass": "^5.0.0",
     "rollup": "^2.39.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.32.7"
   },
   "peerDependencies": {}
 }
