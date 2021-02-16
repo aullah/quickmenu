@@ -7,7 +7,13 @@ const config = {
         {
             file: 'dist/js/quickmenu.bundle.min.js',
             format: 'iife',
-            name: 'QuickMenu'
+            name: 'QuickMenu',
+            sourcemap: true,
+        },
+        {
+            file: 'dist/js/quickmenu.min.js',
+            format: 'es',
+            sourcemap: true,
         },
     ],
     plugins: [
