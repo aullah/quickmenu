@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
-  "module": "dist/js/quickmenu.min.js",
+  "module": "dist/js/quickmenu.es.min.js",
   "scripts": {
     "watch": "concurrently \"rollup -c -w\" \"sass --style=expanded --source-map --embed-sources --watch src/scss:dist/css/\"",
     "build": "(rollup -c) && (sass --style=compressed --source-map --embed-sources src/scss/quickmenu.scss:dist/css/quickmenu.min.css) && (sass --style=expanded --source-map --embed-sources src/scss:dist/css/)"
