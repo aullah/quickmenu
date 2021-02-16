@@ -21,7 +21,9 @@
     "web",
     "quick",
     "html",
-    "javascript"
+    "javascript",
+    "mobile",
+    "front-end"
   ],
   "author": "Arif Ullah",
   "license": "MIT",
