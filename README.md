@@ -22,10 +22,10 @@ The customisation capabilities are reduced by using a CDN, however you should st
 
 ```html
 <!-- Latest compiled CSS. To be placed in the <head>. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.0.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-lCoveNeJiew7hBHnpasryAQUAoWr3+9VPOaKmFNdyzXKtx44jHpCTq8ZlpOaSTMK" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.1.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-lCoveNeJiew7hBHnpasryAQUAoWr3+9VPOaKmFNdyzXKtx44jHpCTq8ZlpOaSTMK" crossorigin="anonymous">
 
 <!-- Latest compiled JS. To be placed before the closing <body> tag. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.0.0/dist/js/quickmenu.min.js" integrity="sha384-3F1pbHhS8c/+7UlnhvUER1vARPB2FeC68mh/HFMSYUFWdqSAqODr7MhCPoripRYm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.1.0/dist/js/quickmenu.bundle.min.js" integrity="sha384-7BJ+VsWSKOvU637CO9MyYQ7FeuMMDPyXcUM17e3VZKbLWyhRXYBCqFIHkJYB8Tjw" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. In a similar order, it's recommended to place the script before any of your own custom scripts too.
@@ -38,7 +38,7 @@ The Quick Menu can be installed as a Node.js module into your project using NPM 
 Using a module bundler such as Webpack, import Quick Menu's JavaScript into your JS file (e.g. `app.js`):
 
 ```javascript
-require('quickmenu');
+import QuickMenu from "quickmenu";
 ```
 
 Then for complete customisation, import Quick Menu's pre-compiled Sass into your `.scss` file:
@@ -54,9 +54,14 @@ import "quickmenu/dist/css/quickmenu.min.css";
 ```
 
 ## Usage
+### JavaScript
+```javascript
+new QuickMenu(); // To initialise the Quick Menu.
+```
+
+### HTML Examples
 When in responsive mode for mobiles and tablets, the menu is fixed at the bottom of the screen within thumb reach. For desktops a regular inline menu is displayed, therefore you should place the HTML code where you want the navigation to be positioned for desktop visitors.
 
-### Examples
 #### Utmost Minimal
 ```html
 <!-- Utmost Minimal -->
