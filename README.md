@@ -22,10 +22,10 @@ The customisation capabilities are reduced by using a CDN, however you should st
 
 ```html
 <!-- Latest compiled CSS. To be placed in the <head>. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.1.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-lCoveNeJiew7hBHnpasryAQUAoWr3+9VPOaKmFNdyzXKtx44jHpCTq8ZlpOaSTMK" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-1Alh/TQ242wwdeRkNYXqDxDUEHD+BPtfrrmEdEypmRxRBnPFNWN6+iQMNfdXybWr" crossorigin="anonymous">
 
 <!-- Latest compiled JS. To be placed before the closing <body> tag. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.1.0/dist/js/quickmenu.bundle.min.js" integrity="sha384-7BJ+VsWSKOvU637CO9MyYQ7FeuMMDPyXcUM17e3VZKbLWyhRXYBCqFIHkJYB8Tjw" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.0/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.
