@@ -18,7 +18,7 @@ The new forward-thinking standard of mobile navigation for the web, providing an
 ### Quick Start via CDN
 For a quick and simple way to implement the Quick Menu into your project, we can use the free open source jsDelivr CDN.
 
-The customisation capabilities are reduced by using a CDN, however you should still be able to make modifications by overwritting the Quick Menu styling properties in your own custom CSS.
+The customisation capabilities are reduced by using a CDN, however you should still be able to make modifications by overwriting the Quick Menu styling properties in your own custom CSS.
 
 ```html
 <!-- Latest compiled CSS. To be placed in the <head>. -->
@@ -142,3 +142,5 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 ## Credits / References
 * Inspired by "iPhone X Web Navigation Concept" by [Daniel Korpai via Medium](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50) and [Dribble](https://dribbble.com/shots/3851367-iPhone-X-Web-Navigation-Idea).
 * Research on "The Thumb Zone: Designing For Mobile Users" by [Samantha Ingram via Smashing Magazine](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/).
+* Development and documentation standards adopted from [Alex MacArthur via TypeIt](https://github.com/alexmacarthur/typeit) and [Bootstrap](https://github.com/twbs/bootstrap).
+* Mobile and tablet device viewports obtained from [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions), ["iPhone 12 vs Designers" by Michal Malewicz via Medium](https://uxdesign.cc/iphone-12-vs-designers-ca8bac776dad) and [Viewport Sizer Tool](https://viewportsizer.com/devices/).
