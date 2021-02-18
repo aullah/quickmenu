@@ -5,6 +5,10 @@ The new forward-thinking standard of mobile navigation for the web, providing an
     <img src="readme-demo.gif" alt="Demo illustrating the Quick Menu in action." width="300px" height="auto">
 </p>
 
+<p align="center">
+    Live demo at <a href="https://quickmenu.org">QuickMenu.org</a>. (Ensure you're on mobile.)
+</p>
+
 ## Key Features
 * Themeable with support for both light and dark mode based on user's device preference.
 * Mobile landscape orientation supported and tested up to Apple iPhone 12 Pro Max and Samsung Galaxy S20 Ultra.
