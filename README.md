@@ -41,7 +41,7 @@ Using a module bundler such as Webpack, import Quick Menu's JavaScript into your
 import QuickMenu from "quickmenu";
 ```
 
-Then for complete customisation, import Quick Menu's pre-compiled Sass into your `.scss` file:
+Then for complete customisation, import Quick Menu's pre-compiled Sass into your `.scss` file: (Depending on your project file structure, you may need to prepend `../` appropriately to the import rule.)
 
 ```scss
 @import "node_modules/quickmenu/src/scss/quickmenu";
@@ -142,5 +142,5 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 ## Credits / References
 * Inspired by "iPhone X Web Navigation Concept" by [Daniel Korpai via Medium](https://medium.muz.li/iphone-x-web-navigation-concept-c06efc0e0c50) and [Dribble](https://dribbble.com/shots/3851367-iPhone-X-Web-Navigation-Idea).
 * Research on "The Thumb Zone: Designing For Mobile Users" by [Samantha Ingram via Smashing Magazine](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/).
-* Development and documentation standards adopted from [Alex MacArthur via TypeIt](https://github.com/alexmacarthur/typeit) and [Bootstrap](https://github.com/twbs/bootstrap).
+* Module development and documentation standards adopted from [Alex MacArthur via TypeIt](https://github.com/alexmacarthur/typeit) and [Bootstrap](https://github.com/twbs/bootstrap).
 * Mobile and tablet device viewports obtained from [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions), ["iPhone 12 vs Designers" by Michal Malewicz via Medium](https://uxdesign.cc/iphone-12-vs-designers-ca8bac776dad) and [Viewport Sizer Tool](https://viewportsizer.com/devices/).
