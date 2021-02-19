@@ -167,7 +167,6 @@
 .quick-menu.navigation .menu nav ul li a {
   display: block;
   background-color: transparent;
-  color: #196ec3;
   border: 2px dashed #196ec3;
   padding: 20px 10px;
   text-align: center;
@@ -178,7 +177,6 @@
 @media (prefers-color-scheme: dark) {
   .quick-menu.navigation .menu nav ul li a {
     background-color: transparent;
-    color: #61646b;
     border: 2px dashed #61646b;
   }
 }
@@ -216,6 +214,16 @@
   }
 }
 
+@media (max-width: 1269px) {
+  .quick-menu.navigation .menu nav ul li a {
+    color: #196ec3;
+  }
+}
+@media (max-width: 1269px) and (prefers-color-scheme: dark) {
+  .quick-menu.navigation .menu nav ul li a {
+    color: #61646b;
+  }
+}
 @media (min-width: 768px) {
   .quick-menu.navigation .menu {
     max-width: 400px;

@@ -42,9 +42,9 @@
             nav { overflow-x: scroll; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch; display: block; margin-bottom: 20px;
                 ul { list-style: none; margin: 0; padding: 0;
                     li { display: inline-block; width: 100%; max-width: $nav-item-width; margin-right: $nav-item-margin; &:last-child { margin-right: 0; }
-                        a { display: block; background-color: map-deep-get($themes, 'light', 'nav-item-bg'); color: map-deep-get($themes, 'light', 'nav-item-color'); border: map-deep-get($themes, 'light', 'nav-item-border') map-deep-get($themes, 'light', 'nav-item-color'); padding: 20px 10px; text-align: center; @include border-radius($nav-item-border-radius);
+                        a { display: block; background-color: map-deep-get($themes, 'light', 'nav-item-bg'); border: map-deep-get($themes, 'light', 'nav-item-border') map-deep-get($themes, 'light', 'nav-item-color'); padding: 20px 10px; text-align: center; @include border-radius($nav-item-border-radius);
 
-                            @include dark-mode { background-color: map-deep-get($themes, 'dark', 'nav-item-bg'); color: map-deep-get($themes, 'dark', 'nav-item-color'); border: map-deep-get($themes, 'dark', 'nav-item-border') map-deep-get($themes, 'dark', 'nav-item-color'); }
+                            @include dark-mode { background-color: map-deep-get($themes, 'dark', 'nav-item-bg'); border: map-deep-get($themes, 'dark', 'nav-item-border') map-deep-get($themes, 'dark', 'nav-item-color'); }
 
                             i { display: block; text-align: center; margin: 15px 0; } // FontAwesome.
                         }
@@ -64,6 +64,25 @@
             0% { transform: translate(0, 120px); }
             80% { transform: translate(0, -5px); }
             100% { transform: translate(0); }
+        }
+    }
+}
+
+// Mobile and tablet devices only, ensuring these styles do not apply to desktops.
+@include device-breakpoint(mobile-tablet-only) {
+    .quick-menu {
+        &.navigation {
+            .menu {
+                nav {
+                    ul {
+                        li {
+                            a { color: map-deep-get($themes, 'light', 'nav-item-color');
+                                @include dark-mode { color: map-deep-get($themes, 'dark', 'nav-item-color'); }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
