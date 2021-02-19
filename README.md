@@ -139,6 +139,23 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 </div>
 ```
 
+### CSS Customisations
+The Quick Menu has been designed to balance providing minimal styling whilst still offering a ready-made solution, therefore even if you're using this package via a CDN you are still able to customise the styling properties. By targeting specific elements in your own custom CSS, you can overwrite the default values.
+
+To ensure your custom CSS takes precedence, place the Quick Menu CSS before (i.e. above) your own stylesheet in your HTML document. The use of the `!important` property should be unnecessary when following these rules as none have been applied in the Quick Menu CSS.
+
+#### Selectors
+```css
+.quick-menu.navigation .button { /* The 'Quick Menu' floating button */ }
+.quick-menu.navigation .menu { /* The entire menu container */ }
+.quick-menu.navigation .menu .menu-heading { /* The heading content (i.e. top part) within the menu from the 'Full Fledged' example */ }
+.quick-menu.navigation .menu .menu-close { /* The close button */ }
+.quick-menu.navigation .menu nav ul li { /* The container for a navigational item (i.e. link container) */
+    max-width: fit-content; /* The max-width of a link. You may find you need to adjust this. */
+}
+.quick-menu.navigation .menu nav ul li a { /* A navigational item (i.e. the link) */ }
+```
+
 ## To-Do / Future Plans
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
 * Provide the ability to toggle themes manually.
