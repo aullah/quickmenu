@@ -272,11 +272,13 @@
     max-width: unset;
   }
   .quick-menu.navigation .menu nav ul li a {
+    display: inline;
     padding: 0;
     border: 0;
     border-radius: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
+    background-color: unset;
   }
   .quick-menu.navigation .menu nav ul li a i {
     display: none;

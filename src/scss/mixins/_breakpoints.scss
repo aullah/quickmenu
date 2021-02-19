@@ -1,12 +1,9 @@
-@mixin breakpoint-quickmenu($point)
+@mixin device-breakpoint($point)
 {
-    @if $point == large {
+    @if $point == desktop {
         @media (min-width: 1270px) { @content; }
     }
-    @else if $point == medium {
-        @media (min-width: 1024px) { @content; }
-    }
-    @else if $point == small {
+    @else if $point == tablet {
         @media (min-width: 768px) { @content; }
     }
     @else if $point == mobile-landscape { // Quick Menu support for mobile devices in landscape. Includes all iPhones (tested upto iPhone 12 PRO Max) and all Androids (tested upto Galaxy S20 Ultra).

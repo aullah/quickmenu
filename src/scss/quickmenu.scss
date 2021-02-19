@@ -1,6 +1,6 @@
+@import "variables";
 @import "functions";
 @import "mixins";
-@import "variables";
 
 .quick-menu {
     &.overlay { // The backdrop when menu is open.
@@ -69,7 +69,7 @@
 }
 
 // Tablet version of quick menu.
-@include breakpoint-quickmenu(small) {
+@include device-breakpoint(tablet) {
     .quick-menu {
         &.navigation {
             .menu { max-width: 400px; margin: 20px auto; @include border-radius(15px); }
@@ -78,7 +78,7 @@
 }
 
 // Enable scrolling on quick menu when in landscape on mobile.
-@include breakpoint-quickmenu(mobile-landscape) {
+@include device-breakpoint(mobile-landscape) {
     .quick-menu {
         &.navigation {
             .menu { max-height: 80vh; overflow: auto; margin: 0 auto;
@@ -90,7 +90,7 @@
 }
 
 // Desktop, navigation links only.
-@include breakpoint-quickmenu(large) {
+@include device-breakpoint(desktop) {
     .quick-menu {
         &.navigation { display: block; pointer-events: auto; position: relative; text-align: unset;
 
