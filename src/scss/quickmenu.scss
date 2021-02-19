@@ -68,14 +68,35 @@
     }
 }
 
+// Tablet version of quick menu.
+@include breakpoint-quickmenu(small) {
+    .quick-menu {
+        &.navigation {
+            .menu { max-width: 400px; margin: 20px auto; @include border-radius(15px); }
+        }
+    }
+}
+
+// Enable scrolling on quick menu when in landscape on mobile.
+@include breakpoint-quickmenu(mobile-landscape) {
+    .quick-menu {
+        &.navigation {
+            .menu { max-height: 80vh; overflow: auto; margin: 0 auto;
+                // Larger mobile devices in landscape will inherit tablet styling, therefore define the following values for mobile-landscape.
+                max-width: 50%; @include border-radius(15px 15px 0 0);
+            }
+        }
+    }
+}
+
 // Desktop, navigation links only.
 @include breakpoint-quickmenu(large) {
     .quick-menu {
-        &.navigation { display: table; pointer-events: auto; position: relative;
+        &.navigation { display: block; pointer-events: auto; position: relative; text-align: unset;
 
             .button { display: none; } // Do not display 'Quick Menu' button.
 
-            .menu { text-align: right; display: table-cell; @include border-radius(0); background-color: unset; padding: 0;
+            .menu { display: block; @include border-radius(0); background-color: unset; padding: 0; max-height: unset; max-width: unset; margin: unset;
 
                 // Don't show any quick-menu contents.
                 .menu-heading, .menu-close, hr { display: none; }
@@ -89,27 +110,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-// Tablet version of quick menu.
-@include breakpoint-quickmenu(small) {
-    .quick-menu {
-        &.navigation {
-            .menu { max-width: 400px; height: initial; margin: 20px auto; @include border-radius(15px); }
-        }
-    }
-}
-
-// Enable scrolling on quick menu when in landscape on mobile.
-@include breakpoint-quickmenu(mobile-landscape) {
-    .quick-menu {
-        &.navigation {
-            .menu { height: 80vh; overflow: auto; width: 50%; margin: 0 auto;
-                // Larger mobile devices in landscape will inherit tablet styling, therefore define the following values for mobile-landscape.
-                max-width: unset; @include border-radius(15px 15px 0 0);
             }
         }
     }
