@@ -1,6 +1,16 @@
 // Variables
+
+// Device breakpoints
+// Following a mobile first approach, the Quick Menu will be displayed on all
+// devices by default. Define the breakpoints for tablets and desktops.
 //
+$device-breakpoints: (
+    tablet: 768px,
+    desktop: 1270px
+) !default;
+
 // Quick Menu Themes.
+//
 // Currently only supporting 'light' and 'dark'.
 $themes: (
     light: (
