@@ -46,7 +46,7 @@
 
                             @include dark-mode { background-color: map-deep-get($themes, 'dark', 'nav-item-bg'); color: map-deep-get($themes, 'dark', 'nav-item-color'); border: map-deep-get($themes, 'dark', 'nav-item-border') map-deep-get($themes, 'dark', 'nav-item-color'); }
 
-                            i { display: block; text-align: center; margin: 15px 0; font-size: $nav-item-icon-size; } // FontAwesome.
+                            i { display: block; text-align: center; margin: 15px 0; } // FontAwesome.
                         }
                     }
                 }

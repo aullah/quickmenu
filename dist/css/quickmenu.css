@@ -186,7 +186,6 @@
   display: block;
   text-align: center;
   margin: 15px 0;
-  font-size: 1.2em;
 }
 .quick-menu.navigation .hide {
   animation: hide 0.5s forwards ease-in-out;
