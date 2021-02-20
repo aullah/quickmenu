@@ -5,6 +5,21 @@ The new forward-thinking standard of mobile navigation for the web, providing an
     <img src="readme-demo.gif" alt="Demo illustrating the Quick Menu in action." width="300px" height="auto">
 </p>
 
+## Contents
+- [Key Features](#key-features)
+- [Live Demo](#live-demo)
+- [Installation](#installation)
+    - [Quick Start via CDN](#quick-start-via-cdn)
+    - [NPM](#npm)
+- [Usage](#usage)
+    - [JavaScript](#javascript)
+    - [HTML Examples](#html-examples)
+    - [The `qm-only` Class](#the-qm-only-class)
+    - [CSS Customisations](#css-customisations)
+- [Contributing](#contributing)
+- [To-Do / Future Plans](#to-do--future-plans)
+- [Credits / References](#credits--references)
+
 ## Key Features
 * Themeable with support for both light and dark mode based on user's device preference.
 * Mobile landscape orientation supported and tested up to Apple iPhone 12 Pro Max and Samsung Galaxy S20 Ultra.
