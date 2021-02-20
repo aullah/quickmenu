@@ -123,9 +123,7 @@
                 nav { overflow-x: initial; overflow-y: initial; white-space: initial; display: block; margin-bottom: 0; // unset horizontal scrolling.
                     ul {
                         li { width: unset; max-width: unset;
-                            a { display: inline; padding: 0; border: 0; @include border-radius(0); background-color: unset; // Remove link styling.
-                               i { display: none; } // Don't show FontAwesome icons
-                            }
+                            a { display: inline; padding: 0; border: 0; @include border-radius(0); background-color: unset; } // Remove link styling.
                         }
                     }
                 }

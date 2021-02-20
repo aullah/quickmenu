@@ -144,10 +144,10 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
         <hr>
         <nav>
             <ul>
-                <li><a href="/"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="/about"><i class="far fa-user-circle"></i>About</a></li>
-                <li><a href="/work"><i class="fas fa-briefcase"></i>Work</a></li>
-                <li><a href="/contact"><i class="far fa-paper-plane"></i>Contact</a></li>
+                <li><a href="/"><i class="fas fa-home qm-only"></i>Home</a></li>
+                <li><a href="/about"><i class="far fa-user-circle qm-only"></i>About</a></li>
+                <li><a href="/work"><i class="fas fa-briefcase qm-only"></i>Work</a></li>
+                <li><a href="/contact"><i class="far fa-paper-plane qm-only"></i>Contact</a></li>
             </ul>
         </nav>
         <div class="menu-close">Dismiss</div>

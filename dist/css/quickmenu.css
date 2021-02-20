@@ -288,9 +288,6 @@
     -webkit-border-radius: 0;
     background-color: unset;
   }
-  .quick-menu.navigation .menu nav ul li a i {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=quickmenu.css.map */
