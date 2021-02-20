@@ -139,6 +139,11 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 </div>
 ```
 
+### The `.qm-only` Class
+As a part of your requirements you may need to present additional content or features (e.g. such as a search field) inside the Quick Menu. You can embed additional content inside the `.menu` div (as illustrated in the "Minimal: Renaming Close Button" and "Full Fledged" HTML examples above).
+
+To ensure that the additional content you insert only appears inside the Quick Menu for mobile and tablet devices and is not present on desktops, you can add the `qm-only` class to HTML elements.
+
 ### CSS Customisations
 The Quick Menu has been designed to balance providing minimal styling whilst still offering a ready-made solution, therefore even if you're using this package via a CDN you are still able to customise the styling properties. By targeting specific elements in your own custom CSS, you can overwrite the default values.
 
