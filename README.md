@@ -42,11 +42,11 @@ For a quick and simple way to implement the Quick Menu into your project, we can
 The customisation capabilities are reduced by using a CDN, however you should still be able to make modifications by overwriting the Quick Menu styling properties in your own custom CSS.
 
 ```html
-<!-- Latest compiled CSS. To be placed in the <head>. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-1Alh/TQ242wwdeRkNYXqDxDUEHD+BPtfrrmEdEypmRxRBnPFNWN6+iQMNfdXybWr" crossorigin="anonymous">
+<!-- Latest compiled CSS. To be placed in the <head> above over stylesheets. -->
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.1/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-5fUj4ImPvoSSxxnmh1BO4VYXGucLxyZTmoC7SKrgMDa747fxkKjOHT16IpU55XFR" crossorigin="anonymous">
 
-<!-- Latest compiled JS. To be placed before the closing <body> tag. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.0/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
+<!-- Latest compiled JS. To be placed before the closing <body> tag above over scripts. -->
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.1/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.
