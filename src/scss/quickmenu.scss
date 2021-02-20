@@ -118,7 +118,7 @@
             .menu { display: block; @include border-radius(0); background-color: unset; padding: 0; max-height: unset; max-width: unset; margin: unset;
 
                 // Don't show any quick-menu contents.
-                .menu-heading, .menu-close, hr { display: none; }
+                .menu-heading, .menu-close, hr, .qm-only { display: none; }
 
                 nav { overflow-x: initial; overflow-y: initial; white-space: initial; display: block; margin-bottom: 0; // unset horizontal scrolling.
                     ul {
