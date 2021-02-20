@@ -215,9 +215,9 @@ $device-breakpoints: (
 ```
 
 ## Contributing
-All forms of contributions to making this a better project are welcome. Please see our [Contributing Document](https://github.com/aullah/quickmenu/blob/main/CONTRIBUTING.md) for more details.
+We appreciate your contributions to making this a better project for all of us. Please see our [Contributing Guide](https://github.com/aullah/quickmenu/blob/main/CONTRIBUTING.md) for more details.
 
-During the participation on the Quick Menu project, we maintain a [Code of Conduct](https://github.com/aullah/quickmenu/blob/main/CODE_OF_CONDUCT.md) which we require all users adhere to.
+During participation on the Quick Menu project, we maintain a [Code of Conduct](https://github.com/aullah/quickmenu/blob/main/CODE_OF_CONDUCT.md) which we require all people adhere to.
 
 ## To-Do / Future Plans
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
