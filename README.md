@@ -161,6 +161,11 @@ To ensure your custom CSS takes precedence, place the Quick Menu CSS before (i.e
 .quick-menu.navigation .menu nav ul li a { /* A navigational item (i.e. the link) */ }
 ```
 
+## Contributing
+All forms of contributions to making this a better project are welcome. Please see our [Contributing Document](https://github.com/aullah/quickmenu/blob/main/CONTRIBUTING.md) for more details.
+
+During the participation on the Quick Menu project, we maintain a [Code of Conduct](https://github.com/aullah/quickmenu/blob/main/CODE_OF_CONDUCT.md) which we require all users adhere to.
+
 ## To-Do / Future Plans
 * Remove FontAwesome specific styling and ensure compatibility with any iconography.
 * Provide the ability to toggle themes manually.
