@@ -16,6 +16,7 @@ The new forward-thinking standard of mobile navigation for the web, providing an
     - [HTML Examples](#html-examples)
     - [The `qm-only` Class](#the-qm-only-class)
     - [CSS Customisations](#css-customisations)
+    - [Sass Customisations](#sass-customisations)
 - [Contributing](#contributing)
 - [To-Do / Future Plans](#to-do--future-plans)
 - [Credits / References](#credits--references)
@@ -174,6 +175,43 @@ To ensure your custom CSS takes precedence, place the Quick Menu CSS before (i.e
     max-width: fit-content; /* The max-width of a link. You may find you need to adjust this. */
 }
 .quick-menu.navigation .menu nav ul li a { /* A navigational item (i.e. the link) */ }
+```
+
+### Sass Customisations
+By importing the pre-compiled Sass source files into your project, you can take additional advantage of configuring the Quick Menu to your preference/requirements. All custom and additional styling should still be incorporated in your own SCSS file(s) however, to retain the independence of the Quick Menu package and ensuring it can continue to be updated without conflicts.
+
+#### Variable Defaults
+All Quick Menu Sass variables are defined followed with a `!default` property, which ensures that if the variable has not been declared in your custom SCSS then the default value will be assigned. This enables your variables to take precedence without the need to modify the Quick Menu package.
+
+Your variables should be set before importing the Quick Menu SCSS. For example:
+```scss
+// Your customisations
+$backdrop-bg: rgba(255, 255, 255, 0.5);
+$nav-item-width: 120px;
+
+// Import Quick Menu SCSS
+@import "node_modules/quickmenu/src/scss/quickmenu";
+```
+
+#### Available Variables
+To view all the variables available for your customisation, please explore the '[src/scss/_variables.scss](https://github.com/aullah/quickmenu/blob/main/src/scss/_variables.scss)' file.
+
+You should copy and paste the variables you need to modify into your own SCSS file, change the value(s) appropriately and then remove the `!default` property.
+
+#### Modifying Device Breakpoints
+Naturally by default a mobile version of the Quick Menu will appear for mobile devices, therefore there is only the need to define breakpoints for the tablet and desktop.
+
+Following the above documentation of altering variables, we can also modify Sass maps (and in our case, device breakpoints) in a similar order. For example:
+
+```scss
+// Your customisations
+$device-breakpoints: (
+    tablet: 768px,
+    desktop: 1200px
+);
+
+// Import Quick Menu SCSS
+@import "node_modules/quickmenu/src/scss/quickmenu";
 ```
 
 ## Contributing
