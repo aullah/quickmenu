@@ -90,7 +90,7 @@ $menu-head-icon-size: 1.4em !default;
 $menu-head-icon-border-radius: 15px !default;
 
 // Nav item, i.e. the link.
-$nav-item-width: 100px !default; // Max-width for a single nav item.
+$nav-item-width: fit-content !default; // Max-width for a single nav item. (Use this to ensure equal width of all items.)
 $nav-item-border-radius: 15px !default;
 $nav-item-margin: 15px !default; // Margin right from other items.
 
