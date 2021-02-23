@@ -17,7 +17,6 @@ The new forward-thinking standard of mobile navigation for the web, providing an
     - [The `qm-only` Class](#the-qm-only-class)
     - [CSS Customisations](#css-customisations)
     - [Sass Customisations](#sass-customisations)
-    - [Navigation Link Width](#navigation-link-width)
 - [Contributing](#contributing)
 - [To-Do / Future Plans](#to-do--future-plans)
 - [Credits / References](#credits--references)
@@ -44,10 +43,10 @@ The customisation capabilities are reduced by using a CDN, however you should st
 
 ```html
 <!-- Latest compiled CSS. To be placed in the <head> above over stylesheets. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.1/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-5fUj4ImPvoSSxxnmh1BO4VYXGucLxyZTmoC7SKrgMDa747fxkKjOHT16IpU55XFR" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.2/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-cgCuPlQWxTOydBb7K003NbZr2kylNPA7Mx7YMYtQPKu/co0fkW9E1mPMmqy2xJ/8" crossorigin="anonymous">
 
 <!-- Latest compiled JS. To be placed before the closing <body> tag above over scripts. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.1/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.2/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.
@@ -173,7 +172,7 @@ To ensure your custom CSS takes precedence, place the Quick Menu CSS before (i.e
 .quick-menu.navigation .menu .menu-heading { /* The heading content (i.e. top part) within the menu from the 'Full Fledged' example */ }
 .quick-menu.navigation .menu .menu-close { /* The close button */ }
 .quick-menu.navigation .menu nav ul li { /* The container for a single navigation link */
-    min-width: fit-content; /* The width of a link. You may adjust this to a fixed value or a % to ensure all items are of equal width. */
+    min-width: 100px; /* The width of a link. You may adjust this to a fixed value or a % to ensure all items are of equal width. */
 }
 .quick-menu.navigation .menu nav ul li a { /* The actual hyperlink. */ }
 ```
@@ -214,12 +213,6 @@ $menu-breakpoints: (
 // Import Quick Menu SCSS
 @import "node_modules/quickmenu/src/scss/quickmenu";
 ```
-### Navigation Link Width
-The Quick Menu has been designed to support links with texts which are long in length, however ensuring that each of your links are of equal width on mobile/tablet provides a more pleasant user interface for our visitors.
-
-Using CSS or Sass for our customisations we can change the width of all navigation links to ensure they are of equal size, where possible. By default all links are defined to use the most minimal amount of space.
-
-To change this behaviour using Sass, you should define the `$nav-item-width` variable before importing the Quick Menu Sass. Alternatively to change the value using CSS, you should set a `min-width` in your stylesheet for the applicable [CSS Selector](#selectors).
 
 ## Contributing
 We appreciate your contributions to making this a better project for all of us. Please see our [Contributing Guide](https://github.com/aullah/quickmenu/blob/main/CONTRIBUTING.md) for more details.
