@@ -157,9 +157,8 @@
 }
 .quick-menu.navigation .menu nav ul li {
   display: inline-block;
-  width: 100%;
   max-width: min-content;
-  min-width: fit-content;
+  min-width: 100px;
   margin-right: 15px;
 }
 .quick-menu.navigation .menu nav ul li:last-child {
@@ -277,7 +276,6 @@
     margin-bottom: 0;
   }
   .quick-menu.navigation .menu nav ul li {
-    width: unset;
     max-width: unset;
     min-width: unset;
   }
