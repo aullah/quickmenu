@@ -205,7 +205,7 @@ Following the above documentation of altering variables, we can also modify Sass
 
 ```scss
 // Your customisations
-$device-breakpoints: (
+$menu-breakpoints: (
     tablet: 768px,
     desktop: 1200px
 );
