@@ -41,7 +41,7 @@
             // Wrap navigation links to facilitate horizontal scrolling.
             nav { overflow-x: scroll; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch; display: block; margin-bottom: 20px;
                 ul { list-style: none; margin: 0; padding: 0;
-                    li { display: inline-block; width: 100%; max-width: $nav-item-width; margin-right: $nav-item-margin; &:last-child { margin-right: 0; }
+                    li { display: inline-block; width: 100%; max-width: $nav-item-max-width; min-width: $nav-item-width; margin-right: $nav-item-margin; &:last-child { margin-right: 0; }
                         a { display: block; background-color: map-deep-get($themes, 'light', 'nav-item-bg'); border: map-deep-get($themes, 'light', 'nav-item-border') map-deep-get($themes, 'light', 'nav-item-color'); padding: 20px 10px; text-align: center; @include border-radius($nav-item-border-radius);
 
                             @include dark-mode { background-color: map-deep-get($themes, 'dark', 'nav-item-bg'); border: map-deep-get($themes, 'dark', 'nav-item-border') map-deep-get($themes, 'dark', 'nav-item-color'); }
@@ -122,7 +122,7 @@
 
                 nav { overflow-x: initial; overflow-y: initial; white-space: initial; display: block; margin-bottom: 0; // unset horizontal scrolling.
                     ul {
-                        li { width: unset; max-width: unset;
+                        li { width: unset; max-width: unset; min-width: unset;
                             a { display: inline; padding: 0; border: 0; @include border-radius(0); background-color: unset; } // Remove link styling.
                         }
                     }
