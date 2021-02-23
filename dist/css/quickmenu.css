@@ -167,7 +167,7 @@
 .quick-menu.navigation .menu nav ul li a {
   display: block;
   background-color: transparent;
-  border: 2px dashed #196ec3;
+  border: 2px solid #196ec3;
   padding: 20px 10px;
   text-align: center;
   border-radius: 15px;
@@ -177,7 +177,7 @@
 @media (prefers-color-scheme: dark) {
   .quick-menu.navigation .menu nav ul li a {
     background-color: transparent;
-    border: 2px dashed #61646b;
+    border: 2px solid #61646b;
   }
 }
 .quick-menu.navigation .menu nav ul li a i {
