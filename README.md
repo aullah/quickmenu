@@ -17,6 +17,7 @@ The new forward-thinking standard of mobile navigation for the web, providing an
     - [The `qm-only` Class](#the-qm-only-class)
     - [CSS Customisations](#css-customisations)
     - [Sass Customisations](#sass-customisations)
+    - [Navigation Link Width](#navigation-link-width)
 - [Contributing](#contributing)
 - [To-Do / Future Plans](#to-do--future-plans)
 - [Credits / References](#credits--references)
@@ -27,7 +28,7 @@ The new forward-thinking standard of mobile navigation for the web, providing an
 * Compatible with mobile devices with non-rectangular screens, i.e. notches and gesture areas.
 * Menu wording and content all customisable in HTML.
 * Responsive for mobile, tablet and desktop. Desktop will render a basic inline navigation.
-* SEO friendly. No need to duplicate navigation items for each device type and content display controlled purely via CSS.
+* SEO friendly. No need to duplicate navigation links for each device type and content display controlled purely via CSS.
 * No development dependencies, libraries or prerequisites required.
 
 ## Live Demo
@@ -171,10 +172,10 @@ To ensure your custom CSS takes precedence, place the Quick Menu CSS before (i.e
 .quick-menu.navigation .menu { /* The entire menu container */ }
 .quick-menu.navigation .menu .menu-heading { /* The heading content (i.e. top part) within the menu from the 'Full Fledged' example */ }
 .quick-menu.navigation .menu .menu-close { /* The close button */ }
-.quick-menu.navigation .menu nav ul li { /* The container for a navigational item (i.e. link container) */
-    max-width: fit-content; /* The max-width of a link. You may find you need to adjust this. */
+.quick-menu.navigation .menu nav ul li { /* The container for a single navigation link */
+    min-width: fit-content; /* The width of a link. You may adjust this to a fixed value or a % to ensure all items are of equal width. */
 }
-.quick-menu.navigation .menu nav ul li a { /* A navigational item (i.e. the link) */ }
+.quick-menu.navigation .menu nav ul li a { /* The actual hyperlink. */ }
 ```
 
 ### Sass Customisations
@@ -213,6 +214,12 @@ $menu-breakpoints: (
 // Import Quick Menu SCSS
 @import "node_modules/quickmenu/src/scss/quickmenu";
 ```
+### Navigation Link Width
+The Quick Menu has been designed to support links with texts which are long in length, however ensuring that each of your links are of equal width on mobile/tablet provides a more pleasant user interface for our visitors.
+
+Using CSS or Sass for our customisations we can change the width of all navigation links to ensure they are of equal size, where possible. By default all links are defined to use the most minimal amount of space.
+
+To change this behaviour using Sass, you should define the `$nav-item-width` variable before importing the Quick Menu Sass. Alternatively to change the value using CSS, you should set a `min-width` in your stylesheet for the applicable [CSS Selector](#selectors).
 
 ## Contributing
 We appreciate your contributions to making this a better project for all of us. Please see our [Contributing Guide](https://github.com/aullah/quickmenu/blob/main/CONTRIBUTING.md) for more details.
