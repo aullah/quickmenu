@@ -43,10 +43,10 @@ The customisation capabilities are reduced by using a CDN, however you should st
 
 ```html
 <!-- Latest compiled CSS. To be placed in the <head> above over stylesheets. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.2.2/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-cgCuPlQWxTOydBb7K003NbZr2kylNPA7Mx7YMYtQPKu/co0fkW9E1mPMmqy2xJ/8" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.3.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-cgCuPlQWxTOydBb7K003NbZr2kylNPA7Mx7YMYtQPKu/co0fkW9E1mPMmqy2xJ/8" crossorigin="anonymous">
 
 <!-- Latest compiled JS. To be placed before the closing <body> tag above over scripts. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.2.2/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.3.0/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.

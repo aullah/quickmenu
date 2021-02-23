@@ -1,6 +1,6 @@
 {
   "name": "quickmenu",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "The new era of mobile navigation for the web, we're out of hamburgers.",
   "main": "dist/js/quickmenu.min.js",
   "module": "dist/js/quickmenu.es.min.js",
