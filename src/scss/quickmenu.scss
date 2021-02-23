@@ -69,7 +69,7 @@
 }
 
 // Mobile and tablet devices only, ensuring these styles do not apply to desktops.
-@include device-breakpoint(mobile-tablet-only) {
+@include menu-breakpoint(mobile-tablet-only) {
     .quick-menu {
         &.navigation {
             .menu {
@@ -88,7 +88,7 @@
 }
 
 // Tablet version of quick menu.
-@include device-breakpoint(tablet) {
+@include menu-breakpoint(tablet) {
     .quick-menu {
         &.navigation {
             .menu { max-width: 400px; margin: 20px auto; @include border-radius(15px); }
@@ -97,7 +97,7 @@
 }
 
 // Enable scrolling on quick menu when in landscape on mobile.
-@include device-breakpoint(mobile-landscape) {
+@include menu-breakpoint(mobile-landscape) {
     .quick-menu {
         &.navigation {
             .menu { max-height: 80vh; overflow: auto; margin: 0 auto;
@@ -109,7 +109,7 @@
 }
 
 // Desktop, navigation links only.
-@include device-breakpoint(desktop) {
+@include menu-breakpoint(desktop) {
     .quick-menu {
         &.navigation { display: block; pointer-events: auto; position: relative; text-align: unset;
 
