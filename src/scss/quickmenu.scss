@@ -13,8 +13,7 @@
 
             @include dark-mode { background: map-deep-get($themes, 'dark', 'menu-btn-bg'); color: map-deep-get($themes, 'dark', 'menu-btn-color'); }
 
-            // Button FontAwesome
-            i { font-size: $menu-btn-icon-size; vertical-align: middle; }
+            .qm-icon { vertical-align: middle; } // Iconography
         }
         .menu { display: none; pointer-events: auto; background-color: map-deep-get($themes, 'light', 'menu-bg'); color: map-deep-get($themes, 'light', 'menu-color'); padding: 20px; padding-bottom: 50px; @include border-radius($menu-border-radius); -webkit-overflow-scrolling: touch;
 
@@ -22,7 +21,8 @@
 
             &.show { display: block; }
             .menu-heading { display: block; text-align: $menu-head-alignment;
-                i { background-color: map-deep-get($themes, 'light', 'menu-head-icon-bg'); color: map-deep-get($themes, 'light', 'menu-head-icon-color'); padding: $menu-head-icon-padding; font-size: $menu-head-icon-size; margin: 10px; @include border-radius($menu-head-icon-border-radius);
+                // Iconography
+                .qm-icon { display: inline-block; background-color: map-deep-get($themes, 'light', 'menu-head-icon-bg'); color: map-deep-get($themes, 'light', 'menu-head-icon-color'); padding: $menu-head-icon-padding; margin: 10px; @include border-radius($menu-head-icon-border-radius);
                     @include dark-mode { background-color: map-deep-get($themes, 'dark', 'menu-head-icon-bg'); color: map-deep-get($themes, 'dark', 'menu-head-icon-color'); }
                 }
                 span, p { display: block; margin: 10px; }
@@ -46,7 +46,7 @@
 
                             @include dark-mode { background-color: map-deep-get($themes, 'dark', 'nav-item-bg'); border: map-deep-get($themes, 'dark', 'nav-item-border') map-deep-get($themes, 'dark', 'nav-item-color'); }
 
-                            i { display: block; text-align: center; margin: 15px 0; } // FontAwesome.
+                            .qm-icon { display: block; text-align: center; margin: 15px 0; } // Iconography
                         }
                     }
                 }
