@@ -22,7 +22,7 @@
             &.show { display: block; }
             .menu-heading { display: block; text-align: $menu-head-alignment;
                 // Iconography
-                .qm-icon { display: inline-block; background-color: map-deep-get($themes, 'light', 'menu-head-icon-bg'); color: map-deep-get($themes, 'light', 'menu-head-icon-color'); padding: $menu-head-icon-padding; margin: 10px; @include border-radius($menu-head-icon-border-radius);
+                .qm-icon { display: inline-flex; background-color: map-deep-get($themes, 'light', 'menu-head-icon-bg'); color: map-deep-get($themes, 'light', 'menu-head-icon-color'); padding: $menu-head-icon-padding; margin: 10px; @include border-radius($menu-head-icon-border-radius);
                     @include dark-mode { background-color: map-deep-get($themes, 'dark', 'menu-head-icon-bg'); color: map-deep-get($themes, 'dark', 'menu-head-icon-color'); }
                 }
                 span, p { display: block; margin: 10px; }
