@@ -50,8 +50,7 @@
     color: #fff;
   }
 }
-.quick-menu.navigation .button i {
-  font-size: 0.8em;
+.quick-menu.navigation .button .qm-icon {
   vertical-align: middle;
 }
 .quick-menu.navigation .menu {
@@ -79,18 +78,18 @@
   display: block;
   text-align: center;
 }
-.quick-menu.navigation .menu .menu-heading i {
+.quick-menu.navigation .menu .menu-heading .qm-icon {
+  display: inline-block;
   background-color: #2c9ff7;
   color: #fff;
   padding: 10px;
-  font-size: 1.4em;
   margin: 10px;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
 }
 @media (prefers-color-scheme: dark) {
-  .quick-menu.navigation .menu .menu-heading i {
+  .quick-menu.navigation .menu .menu-heading .qm-icon {
     background-color: #4d99fb;
     color: #fff;
   }
@@ -180,7 +179,7 @@
     border: 2px dashed #61646b;
   }
 }
-.quick-menu.navigation .menu nav ul li a i {
+.quick-menu.navigation .menu nav ul li a .qm-icon {
   display: block;
   text-align: center;
   margin: 15px 0;
