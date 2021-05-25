@@ -265,7 +265,7 @@
     margin: unset;
   }
   .quick-menu.navigation .menu .menu-heading, .quick-menu.navigation .menu .menu-close, .quick-menu.navigation .menu hr, .quick-menu.navigation .menu .qm-only {
-    display: none;
+    display: none !important;
   }
   .quick-menu.navigation .menu nav {
     overflow-x: initial;
