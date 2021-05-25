@@ -42,11 +42,11 @@ For a quick and simple way to implement the Quick Menu into your project, we can
 The customisation capabilities are reduced by using a CDN, however you should still be able to make modifications by overwriting the Quick Menu styling properties in your own custom CSS.
 
 ```html
-<!-- Latest compiled CSS. To be placed in the <head> above over stylesheets. -->
-<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.3.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-cgCuPlQWxTOydBb7K003NbZr2kylNPA7Mx7YMYtQPKu/co0fkW9E1mPMmqy2xJ/8" crossorigin="anonymous">
+<!-- Latest compiled CSS. To be placed in the <head> above other stylesheets. -->
+<link href="https://cdn.jsdelivr.net/npm/quickmenu@1.4.0/dist/css/quickmenu.min.css" rel="stylesheet" integrity="sha384-Pkbhc09gBjDEhzyc88npCxlMrSPAxIyYgOlEO5OhdueX8OihlI+3/pKABNrF09ET" crossorigin="anonymous">
 
-<!-- Latest compiled JS. To be placed before the closing <body> tag above over scripts. -->
-<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.3.0/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
+<!-- Latest compiled JS. To be placed before the closing <body> tag above other scripts. -->
+<script src="https://cdn.jsdelivr.net/npm/quickmenu@1.4.0/dist/js/quickmenu.min.js" integrity="sha384-J+7UVhxvYUPTb1N2qLj0dvniUcy8M1Ssxsic1xFI31naqNI4KlXP+r4D5eLVxhgg" crossorigin="anonymous"></script>
 ```
 
 We recommend placing the stylesheet before any of your own custom stylesheets, which will ensure your customisations take precedence where possible. Similarly, it's required to place the script before any of your own custom scripts too.
@@ -132,28 +132,33 @@ When in responsive mode for mobiles and tablets, the menu is fixed at the bottom
 
 #### Full Fledged
 ```html
-<!-- Full Fledged: including FontAwesome icons, menu heading content, customised wording on open and close buttons. -->
+<!-- Full Fledged: including SVGs as icons (not supplied), menu heading content, customised wording on open and close buttons. -->
 <div class="quick-menu navigation">
-    <div class="button"><i class="fas fa-bars"></i> My Menu</div>
+    <div class="button"><img src="/icons/bars.svg">My Menu</div>
     <div class="menu">
         <div class="menu-heading">
-            <i class="far fa-compass"></i>
+            <div class="qm-icon"><img src="/icons/compass.svg"></div>
             <span>My Menu</span>
             <p>Explore the contents of this site by jumping around using the following handy menu.</p>
         </div>
         <hr>
         <nav>
             <ul>
-                <li><a href="/"><i class="fas fa-home qm-only"></i>Home</a></li>
-                <li><a href="/about"><i class="far fa-user-circle qm-only"></i>About</a></li>
-                <li><a href="/work"><i class="fas fa-briefcase qm-only"></i>Work</a></li>
-                <li><a href="/contact"><i class="far fa-paper-plane qm-only"></i>Contact</a></li>
+                <li><a href="/"><div class="qm-icon qm-only"><img src="/icons/home.svg"></div>Home</a></li>
+                <li><a href="/about"><div class="qm-icon qm-only"><img src="/icons/about.svg"></div>About</a></li>
+                <li><a href="/work"><div class="qm-icon qm-only"><img src="/icons/work.svg"></div>Work</a></li>
+                <li><a href="/contact"><div class="qm-icon qm-only"><img src="/icons/contact.svg"></div>Contact</a></li>
             </ul>
         </nav>
         <div class="menu-close">Dismiss</div>
     </div>
 </div>
 ```
+
+##### The `.qm-icon` Class
+The Quick Menu has been designed to enable you to use any iconography set on the menu, including images/SVGs, fonts and etc. Any icon styling will need to be applied from your own custom CSS. However we have introduced a `qm-icon` class to provide minimal styling to reduce your workload.
+
+If you're using FontAwesome icons via the `<i>` element for example, you can apply the `.qm-icon` class directly to the element. Otherwise you can wrap your icons in a `div` element with the `.qm-icon` class.
 
 ### The `.qm-only` Class
 As a part of your requirements you may need to present additional content or features (e.g. such as a search field) inside the Quick Menu. You can embed additional content inside the `.menu` div (as illustrated in the "Minimal: Renaming Close Button" and "Full Fledged" HTML examples above).
@@ -220,7 +225,6 @@ We appreciate your contributions to making this a better project for all of us. 
 During participation on the Quick Menu project, we maintain a [Code of Conduct](https://github.com/aullah/quickmenu/blob/main/CODE_OF_CONDUCT.md) which we require all individuals to adhere to.
 
 ## To-Do / Future Plans
-* Remove FontAwesome specific styling and ensure compatibility with any iconography.
 * Provide the ability to toggle themes manually.
 * Implement the ability to have sub-menus for both desktop and mobile devices.
 
